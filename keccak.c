@@ -4,6 +4,7 @@
 
 #include <stdint.h>
 #include <memory.h>
+#include "keccak.h"
 
 #define HASH_DATA_AREA 136
 #define KECCAK_ROUNDS 24
