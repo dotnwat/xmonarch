@@ -1,0 +1,3 @@
+*.o
+test_keccak
+test_keccak.js
