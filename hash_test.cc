@@ -1,10 +1,15 @@
 #include <string>
 #include <iostream>
+#include <cassert>
+#include <string.h>
 #include "base64.h"
 #include "keccak.h"
+#include "jh.h"
 
 int main(int argc, char **argv)
 {
+  assert(argc == 2);
+
   // read base64 encoded input string
   std::string input((std::istreambuf_iterator<char>(std::cin)),
       (std::istreambuf_iterator<char>()));
@@ -15,8 +20,17 @@ int main(int argc, char **argv)
 
   // hash
   unsigned char buf[200];
-  keccak((unsigned char *)blob.c_str(), blob.size(),
-      buf, sizeof(buf));
+  memset(buf, 0, sizeof(buf));
+
+  if (strcmp(argv[1], "keccak") == 0) {
+    keccak((unsigned char *)blob.c_str(), blob.size(),
+        buf, sizeof(buf));
+  } else if (strcmp(argv[1], "jh") == 0) {
+    jh(256, (unsigned char *)blob.c_str(), blob.size() * 8, buf);
+  } else {
+    std::cerr << "unknown function: " << argv[1] << std::endl;
+    assert(0);
+  }
 
   // encode output as base64 and print
   std::string tmp((char*)buf, sizeof(buf));

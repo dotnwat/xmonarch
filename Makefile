@@ -1,10 +1,10 @@
 CFLAGS = -Wall
 CXXFLAGS = -Wall
 
-PROGS = test_keccak test_keccak.js
+PROGS = hash_test hash_test.js
 all: $(PROGS)
 
-OBJS = keccak.o
+OBJS = keccak.o jh_ansi_opt64.o
 EM_OBJS = $(OBJS:.o=.js.o)
 
 # emscripten docker
@@ -14,14 +14,14 @@ EMCC = $(EM_DOCKER) emcc
 EM++ = $(EM_DOCKER) em++
 
 $(EM_OBJS): %.js.o: %.c
-	$(EMCC) -o $@ $<
+	$(EMCC) $(CFLAGS) -o $@ $<
 
 %.js: %.cc
-	$(EM++) -o $@ $^
+	$(EM++) $(CXXFLAGS) -o $@ $^
 
-test_keccak: $(OBJS)
+hash_test: $(OBJS)
 
-test_keccak.js: $(EM_OBJS)
+hash_test.js: $(EM_OBJS)
 
 clean:
 	rm -f $(OBJS) $(EM_OBJS) $(PROGS)

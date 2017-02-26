@@ -3,12 +3,9 @@
 set -e
 set -x
 
-PATH=$PWD:$PATH
-
 function compare() {
   local size=$1
-  local prog0=$2
-  local prog1=$3
+  local func=$2
 
   local input=$(mktemp)
   local out0=$(mktemp)
@@ -16,8 +13,8 @@ function compare() {
   trap "rm -f $input $out0 $out1" EXIT
 
   cat /dev/urandom | head -c $size | base64 > $input
-  cat $input | $prog0 > $out0
-  cat $input | $prog1 > $out1
+  cat $input | ./hash_test $func > $out0
+  cat $input | node hash_test.js $func > $out1
 
   diff $out0 $out1
 
@@ -25,5 +22,6 @@ function compare() {
 }
 
 for size in 1 2 3 32 38 99 100 12000 39833; do
-  compare $size test_keccak "node test_keccak.js"
+  compare $size keccak
+  compare $size jh
 done
