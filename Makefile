@@ -1,5 +1,7 @@
-CFLAGS = -Wall
-CXXFLAGS = -Wall
+OPT_LEVEL ?=
+
+CFLAGS = -Wall $(OPT_LEVEL)
+CXXFLAGS = -Wall $(OPT_LEVEL)
 
 PROGS = hash_test hash_test.js
 all: $(PROGS)

@@ -1,3 +1,4 @@
 *.o
+*.mem
 hash_test
 hash_test.js

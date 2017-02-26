@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -e
-set -x
 
 function compare() {
   local size=$1
@@ -21,7 +20,11 @@ function compare() {
   rm $input $out0 $out1
 }
 
-for size in 1 2 3 32 38 99 100 12000 39833; do
-  compare $size keccak
-  compare $size jh
+for optlevel in "" -O0 -O1 -O2 -O3; do
+  make clean
+  make OPT_LEVEL=$optlevel
+  for size in 1 2 3 32 38 99 100 12000 39833; do
+    compare $size keccak
+    compare $size jh
+  done
 done
