@@ -12,6 +12,7 @@ function compare() {
   trap "rm -f $input $out0 $out1" EXIT
 
   cat /dev/urandom | head -c $size | base64 > $input
+  cat $input | md5sum
   cat $input | ./hash_test $func > $out0
   cat $input | node hash_test.js $func > $out1
 
@@ -22,12 +23,12 @@ function compare() {
 
 for optlevel in "" -O0 -O1 -O2 -O3; do
   make clean
-  make OPT_LEVEL=$optlevel
-  for size in 1 2 3 32 38 99 100 12000 39833; do
-    compare $size keccak
-    compare $size jh
-    compare $size blake
-    compare $size skein
-    compare $size groestl
+  make OPT_LEVEL=$optlevel -j$(nproc)
+  for run in {1..100}; do
+    size=$((1 + RANDOM % 1000000))
+    for algo in keccak jh blake skein groestl; do
+      echo "run=$run opt-level=\"$OPT_LEVEL\" size=$size algo=$algo"
+      compare $size $algo
+    done
   done
 done
