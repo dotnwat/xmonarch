@@ -2033,7 +2033,7 @@ static SkeinHashReturn Final(hashState *state, SkeinBitSequence *hashval)
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* all-in-one hash function */
-SkeinHashReturn skein_hash(int hashbitlen, const SkeinBitSequence *data, /* all-in-one call */
+SkeinHashReturn skein(int hashbitlen, const SkeinBitSequence *data, /* all-in-one call */
 				SkeinDataLength databitlen,SkeinBitSequence *hashval)
 {
   hashState  state;
