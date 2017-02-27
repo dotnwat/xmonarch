@@ -28,5 +28,6 @@ for optlevel in "" -O0 -O1 -O2 -O3; do
     compare $size jh
     compare $size blake
     compare $size skein
+    compare $size groestl
   done
 done

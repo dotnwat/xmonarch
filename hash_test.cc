@@ -7,6 +7,7 @@
 #include "jh.h"
 #include "blake.h"
 #include "skein.h"
+#include "groestl.h"
 
 int main(int argc, char **argv)
 {
@@ -33,6 +34,8 @@ int main(int argc, char **argv)
     blake((unsigned char *)blob.c_str(), blob.size(), buf);
   } else if (strcmp(argv[1], "skein") == 0) {
     skein(256, (unsigned char *)blob.c_str(), blob.size() * 8, buf);
+  } else if (strcmp(argv[1], "groestl") == 0) {
+    groestl((unsigned char *)blob.c_str(), blob.size() * 8, buf);
   } else {
     std::cerr << "unknown function: " << argv[1] << std::endl;
     assert(0);
