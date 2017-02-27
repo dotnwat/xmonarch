@@ -223,6 +223,11 @@ void blake256_hash(uint8_t *out, const uint8_t *in, uint64_t inlen) {
 	blake256_final(&S, out);
 }
 
+void blake(const uint8_t *input, uint64_t len, uint8_t *output)
+{
+	blake256_hash(output, input, len);
+}
+
 // inlen = number of bytes
 void blake224_hash(uint8_t *out, const uint8_t *in, uint64_t inlen) {
 	state S;
