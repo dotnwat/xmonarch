@@ -26,5 +26,6 @@ for optlevel in "" -O0 -O1 -O2 -O3; do
   for size in 1 2 3 32 38 99 100 12000 39833; do
     compare $size keccak
     compare $size jh
+    compare $size blake
   done
 done

@@ -5,6 +5,7 @@
 #include "base64.h"
 #include "keccak.h"
 #include "jh.h"
+#include "blake.h"
 
 int main(int argc, char **argv)
 {
@@ -27,6 +28,8 @@ int main(int argc, char **argv)
         buf, sizeof(buf));
   } else if (strcmp(argv[1], "jh") == 0) {
     jh(256, (unsigned char *)blob.c_str(), blob.size() * 8, buf);
+  } else if (strcmp(argv[1], "blake") == 0) {
+    blake((unsigned char *)blob.c_str(), blob.size(), buf);
   } else {
     std::cerr << "unknown function: " << argv[1] << std::endl;
     assert(0);
