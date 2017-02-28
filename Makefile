@@ -6,7 +6,7 @@ CXXFLAGS = -Wall $(OPT_LEVEL)
 PROGS = hash_test hash_test.js
 all: $(PROGS)
 
-OBJS = keccak.o jh_ansi_opt64.o blake.o skein.o groestl.o
+OBJS = keccak.o jh_ansi_opt64.o blake.o skein.o groestl.o oaes_lib.o
 EM_OBJS = $(OBJS:.o=.js.o)
 
 # emscripten docker

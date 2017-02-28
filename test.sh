@@ -17,6 +17,7 @@ function compare() {
   cat $input | node hash_test.js $func > $out1
 
   diff $out0 $out1
+  cat $out0 | md5sum
 
   rm $input $out0 $out1
 }
@@ -30,5 +31,7 @@ for optlevel in "" -O0 -O1 -O2 -O3; do
       echo "run=$run opt-level=\"$OPT_LEVEL\" size=$size algo=$algo"
       compare $size $algo
     done
+    echo "run=$run opt-level=\"$OPT_LEVEL\" size=200 algo=oaes_key_omport_data"
+    compare 200 oaes_key_import_data # needs 200 bytes
   done
 done
