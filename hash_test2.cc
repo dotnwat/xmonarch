@@ -3,6 +3,7 @@
 #include <cassert>
 #include <string.h>
 #include "blake.h"
+#include "groestl.h"
 #include "json.hpp"
 
 using json = nlohmann::json;
@@ -56,6 +57,8 @@ static bool test_hash(const std::string& func,
   unsigned char digest_bin[32];
   if (func == "blake") {
     blake(message_bin, sizeof(message_bin), digest_bin);
+  } else if (func == "groestl") {
+    groestl(message_bin, sizeof(message_bin) * 8, digest_bin);
   } else {
     assert(0);
     return false;
