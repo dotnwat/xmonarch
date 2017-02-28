@@ -1,0 +1,93 @@
+#include <string>
+#include <iostream>
+#include <cassert>
+#include <string.h>
+#include "blake.h"
+#include "json.hpp"
+
+using json = nlohmann::json;
+
+static unsigned char hf_hex2bin(char c)
+{
+	if (c >= '0' && c <= '9')
+		return c - '0';
+	else if (c >= 'a' && c <= 'f')
+		return c - 'a' + 0xA;
+	else if (c >= 'A' && c <= 'F')
+		return c - 'A' + 0xA;
+
+	assert(0);
+}
+
+static void hex2bin(const char* in, unsigned int len, unsigned char* out)
+{
+	for (unsigned int i = 0; i < len; i += 2) {
+		out[i / 2] = (hf_hex2bin(in[i]) << 4) | hf_hex2bin(in[i + 1]);
+	}
+}
+
+#if 0
+static char hf_bin2hex(unsigned char c)
+{
+	if (c <= 0x9)
+		return '0' + c;
+	else
+		return 'a' - 0xA + c;
+}
+
+static void bin2hex(const unsigned char* in, unsigned int len, char* out)
+{
+	for (unsigned int i = 0; i < len; i++) {
+		out[i * 2] = hf_bin2hex((in[i] & 0xF0) >> 4);
+		out[i * 2 + 1] = hf_bin2hex(in[i] & 0x0F);
+	}
+}
+#endif
+
+static bool test_hash(const std::string& func,
+    const std::string& message, const std::string& digest)
+{
+  // decode hex message into binary
+  assert(message.size() % 2 == 0);
+  unsigned char message_bin[message.size() / 2];
+  hex2bin(message.c_str(), message.size(), message_bin);
+
+  // hash binary message into digest_bin
+  unsigned char digest_bin[32];
+  if (func == "blake") {
+    blake(message_bin, sizeof(message_bin), digest_bin);
+  } else {
+    assert(0);
+    return false;
+  }
+
+  // decode hex digest into binary
+  assert(digest.size() % 2 == 0);
+  unsigned char target_digest_bin[digest.size() / 2];
+  hex2bin(digest.c_str(), digest.size(), target_digest_bin);
+
+  if (sizeof(target_digest_bin) != sizeof(digest_bin))
+    return false;
+
+  int res = memcmp(digest_bin, target_digest_bin, sizeof(digest_bin));
+  return res == 0;
+}
+
+int main(int argc, char **argv)
+{
+  json input;
+
+  std::cin >> input;
+
+  assert(input.is_array());
+  for (auto entry : input) {
+    assert(entry.is_object());
+    const std::string& func = entry["function"];
+    const std::string& msg = entry["message"];
+    const std::string& digest = entry["digest"];
+    bool ok = test_hash(func, msg, digest);
+    assert(ok);
+  }
+
+  return 0;
+}
