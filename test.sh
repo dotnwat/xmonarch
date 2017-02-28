@@ -22,16 +22,22 @@ function compare() {
   rm $input $out0 $out1
 }
 
+# TODO: unify the loops by specifying per-algo min input sizes
 for optlevel in "" -O0 -O1 -O2 -O3; do
   make clean
   make OPT_LEVEL=$optlevel -j$(nproc)
   for run in {1..100}; do
-    size=$((1 + RANDOM % 1000000))
-    for algo in keccak keccakf jh blake skein groestl; do
-      echo "run=$run opt-level=\"$OPT_LEVEL\" size=$size algo=$algo"
-      compare $size $algo
+    size1=$((1 + RANDOM % 128))
+    size2=$((129 + RANDOM % 1000000))
+    for size in 10 $size1 $size2 39; do
+      for algo in keccak jh blake skein groestl; do
+        echo "run=$run opt-level=\"$OPT_LEVEL\" size=$size algo=$algo"
+        compare $size $algo
+      done
+      echo "run=$run opt-level=\"$OPT_LEVEL\" size=200 algo=oaes_key_omport_data"
+      compare 200 oaes_key_import_data
+      echo "run=$run opt-level=\"$OPT_LEVEL\" size=200 algo=keccakf"
+      compare 200 keccakf
     done
-    echo "run=$run opt-level=\"$OPT_LEVEL\" size=200 algo=oaes_key_omport_data"
-    compare 200 oaes_key_import_data # needs 200 bytes
   done
 done
