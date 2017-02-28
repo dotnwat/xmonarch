@@ -87,6 +87,8 @@ int main(int argc, char **argv)
     const std::string& digest = entry["digest"];
     bool ok = test_hash(func, msg, digest);
     assert(ok);
+    if (!ok)
+      return 1;
   }
 
   return 0;
