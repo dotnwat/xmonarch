@@ -39,6 +39,7 @@ int main(int argc, char **argv)
     groestl((unsigned char *)blob.c_str(), blob.size() * 8, buf);
   } else if (strcmp(argv[1], "keccakf") == 0) {
     uint64_t st[25];
+    assert(sizeof(st) <= blob.size());
     memcpy(st, blob.c_str(), sizeof(st));
     keccakf(st, 24);
     assert(sizeof(st) <= sizeof(buf));
