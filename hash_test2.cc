@@ -5,6 +5,7 @@
 #include "blake.h"
 #include "groestl.h"
 #include "jh.h"
+#include "skein.h"
 #include "json.hpp"
 
 using json = nlohmann::json;
@@ -62,6 +63,8 @@ static bool test_hash(const std::string& func,
     groestl(message_bin, sizeof(message_bin) * 8, digest_bin);
   } else if (func == "jh") {
     jh(256, message_bin, sizeof(message_bin) * 8, digest_bin);
+  } else if (func == "skein") {
+    skein(256, message_bin, sizeof(message_bin) * 8, digest_bin);
   } else {
     assert(0);
     return false;
