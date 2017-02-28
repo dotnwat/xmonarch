@@ -26,7 +26,7 @@ for optlevel in "" -O0 -O1 -O2 -O3; do
   make OPT_LEVEL=$optlevel -j$(nproc)
   for run in {1..100}; do
     size=$((1 + RANDOM % 1000000))
-    for algo in keccak jh blake skein groestl; do
+    for algo in keccak keccakf jh blake skein groestl; do
       echo "run=$run opt-level=\"$OPT_LEVEL\" size=$size algo=$algo"
       compare $size $algo
     done

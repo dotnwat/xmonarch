@@ -36,6 +36,11 @@ int main(int argc, char **argv)
     skein(256, (unsigned char *)blob.c_str(), blob.size() * 8, buf);
   } else if (strcmp(argv[1], "groestl") == 0) {
     groestl((unsigned char *)blob.c_str(), blob.size() * 8, buf);
+  } else if (strcmp(argv[1], "keccakf") == 0) {
+    uint64_t st[25];
+    memcpy(st, blob.c_str(), sizeof(st));
+    keccakf(st, 24);
+    memcpy(buf, st, sizeof(st));
   } else {
     std::cerr << "unknown function: " << argv[1] << std::endl;
     assert(0);
