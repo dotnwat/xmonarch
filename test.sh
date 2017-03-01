@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -x
 
 function compare() {
   local size=$1
@@ -39,5 +40,9 @@ for optlevel in "" -O0 -O1 -O2 -O3; do
       echo "run=$run opt-level=\"$OPT_LEVEL\" size=200 algo=keccakf"
       compare 200 keccakf
     done
+  done
+  for vecfile in blake groestl jh keccak keccakf oaes_key_import_data skein; do
+    cat ${vecfile}.json | ./hash_test2
+    cat ${vecfile}.json | node hash_test2.js
   done
 done
