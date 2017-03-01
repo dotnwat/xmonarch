@@ -1,9 +1,9 @@
 OPT_LEVEL ?=
 
 CFLAGS = -Wall $(OPT_LEVEL)
-CXXFLAGS = -Wall $(OPT_LEVEL)
+CXXFLAGS = -Wall --std=c++11 $(OPT_LEVEL)
 
-PROGS = hash_test hash_test.js
+PROGS = hash_test hash_test.js hash_test2 hash_test2.js
 all: $(PROGS)
 
 OBJS = keccak.o jh_ansi_opt64.o blake.o skein.o groestl.o oaes_lib.o
@@ -24,6 +24,10 @@ $(EM_OBJS): %.js.o: %.c
 hash_test: $(OBJS)
 
 hash_test.js: $(EM_OBJS)
+
+hash_test2: $(OBJS)
+
+hash_test2.js: $(EM_OBJS)
 
 clean:
 	rm -f $(OBJS) $(EM_OBJS) $(PROGS)
