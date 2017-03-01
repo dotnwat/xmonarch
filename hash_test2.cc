@@ -7,6 +7,7 @@
 #include "jh.h"
 #include "skein.h"
 #include "keccak.h"
+#include "oaes_lib.h"
 #include "json.hpp"
 
 using json = nlohmann::json;
@@ -58,7 +59,7 @@ static bool test_hash(const std::string& func,
 
   // hash binary message into digest_bin
   size_t digest_bin_size = 32;
-  unsigned char digest_bin[200]; // maximum needed
+  unsigned char digest_bin[240]; // maximum needed
   if (func == "blake") {
     blake(message_bin, sizeof(message_bin), digest_bin);
   } else if (func == "groestl") {
@@ -75,6 +76,13 @@ static bool test_hash(const std::string& func,
     keccakf((uint64_t *)message_bin, 24);
     memcpy(digest_bin, message_bin, 200);
     digest_bin_size = 200;
+  } else if (func == "oaes_key_import_data") {
+    digest_bin_size = 240;
+    assert(sizeof(message_bin) == 32);
+    oaes_ctx *ctx = (oaes_ctx *)oaes_alloc();
+    oaes_key_import_data(ctx, message_bin, 32);
+    assert(ctx->key->exp_data_len <= sizeof(digest_bin));
+    memcpy(digest_bin, ctx->key->exp_data, ctx->key->exp_data_len);
   } else {
     assert(0);
     return false;
