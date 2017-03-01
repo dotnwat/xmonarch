@@ -70,6 +70,11 @@ static bool test_hash(const std::string& func,
   } else if (func == "keccak") {
     digest_bin_size = 200;
     keccak(message_bin, sizeof(message_bin), digest_bin, 200);
+  } else if (func == "keccakf") {
+    assert(sizeof(message_bin) == 200);
+    keccakf((uint64_t *)message_bin, 24);
+    memcpy(digest_bin, message_bin, 200);
+    digest_bin_size = 200;
   } else {
     assert(0);
     return false;
