@@ -6,6 +6,7 @@
 #include "groestl.h"
 #include "jh.h"
 #include "skein.h"
+#include "keccak.h"
 #include "json.hpp"
 
 using json = nlohmann::json;
@@ -56,7 +57,8 @@ static bool test_hash(const std::string& func,
   hex2bin(message.c_str(), message.size(), message_bin);
 
   // hash binary message into digest_bin
-  unsigned char digest_bin[32];
+  size_t digest_bin_size = 32;
+  unsigned char digest_bin[200]; // maximum needed
   if (func == "blake") {
     blake(message_bin, sizeof(message_bin), digest_bin);
   } else if (func == "groestl") {
@@ -65,6 +67,9 @@ static bool test_hash(const std::string& func,
     jh(256, message_bin, sizeof(message_bin) * 8, digest_bin);
   } else if (func == "skein") {
     skein(256, message_bin, sizeof(message_bin) * 8, digest_bin);
+  } else if (func == "keccak") {
+    digest_bin_size = 200;
+    keccak(message_bin, sizeof(message_bin), digest_bin, 200);
   } else {
     assert(0);
     return false;
@@ -75,10 +80,10 @@ static bool test_hash(const std::string& func,
   unsigned char target_digest_bin[digest.size() / 2];
   hex2bin(digest.c_str(), digest.size(), target_digest_bin);
 
-  if (sizeof(target_digest_bin) != sizeof(digest_bin))
+  if (sizeof(target_digest_bin) != digest_bin_size)
     return false;
 
-  int res = memcmp(digest_bin, target_digest_bin, sizeof(digest_bin));
+  int res = memcmp(digest_bin, target_digest_bin, sizeof(target_digest_bin));
   return res == 0;
 }
 
