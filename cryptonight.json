@@ -1,0 +1,1002 @@
+[
+    {
+        "function": "cryptonight",
+        "message": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b",
+        "digest": "f6cb9c11f00543bab31ad730687d5df828118e8e5ed678ff73ae483c23785386"
+    },
+    {
+        "function": "cryptonight",
+        "message": "4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f9091929394959697",
+        "digest": "090984c7d67d0168e95db74f266e330aeeeef3da7a40bb24d351381e53feb0a5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "98999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3",
+        "digest": "7353f3ea6e2b1143641f2fc625991b230aeac0baebe426e40726423e2f2c0359"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f",
+        "digest": "f01bf5316fe99e0c2619deb1b679e350958020d0172f7834674b037d5b639571"
+    },
+    {
+        "function": "cryptonight",
+        "message": "303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b",
+        "digest": "c7a7a299c4edc6e3795e6aba0b2a5d5e35452020098c9202b2a13b3a9d597af3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7",
+        "digest": "5596bf128453e9feeb3ac97a3df539f9f716f15ba11d80c16b41835310d57875"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f10111213",
+        "digest": "b8c084a72c9cd39bb445b5a92eec0f1955fe7ae1d1fa955881c21f2c9a91cdea"
+    },
+    {
+        "function": "cryptonight",
+        "message": "1415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f",
+        "digest": "40f934eb438d3edaa70f4ad9f61b394ff577b7cc5efaf0249de3822a54ae233e"
+    },
+    {
+        "function": "cryptonight",
+        "message": "606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaab",
+        "digest": "bee55f71f42c482260666f901aa06fee6ceb08c8f7d7a79071f8f1016d2bfd5b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "acadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7",
+        "digest": "5200cd0b9b990345006b050661f898fa0eefd7bbd55e0e8cd5eb40daa894f3e3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40414243",
+        "digest": "7f9ba9856d1e8ecdefc96b26b9fa822c4a6b9a35aa8fd8a8599f4aeef157c2fb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "4445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f",
+        "digest": "1f26c31a6ae16727506b6ed895e6b7eec234e5e14422823534df58377e72f583"
+    },
+    {
+        "function": "cryptonight",
+        "message": "909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadb",
+        "digest": "b190a5a0ed3ef046a5ee7502f3c62ab73e7386471014d27643f374a01bd1d479"
+    },
+    {
+        "function": "cryptonight",
+        "message": "dcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f2021222324252627",
+        "digest": "9b81b9f220b2ea39f971deabbaf4d1afa3301ded2322e7eeba1b51c8747e8ee4"
+    },
+    {
+        "function": "cryptonight",
+        "message": "28292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f70717273",
+        "digest": "7b68fe48e8d46b85e2e1ab09941f1257addd6d892dbd0048317210793787edee"
+    },
+    {
+        "function": "cryptonight",
+        "message": "7475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf",
+        "digest": "6bb38d76f4f9897a6ed8195c51c9abf0303b8b339858922f9a1f37e957f143e5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b",
+        "digest": "beac71b360d22c9146c357143dd48c475a2a63d3ea1b760a730d53c3fb3c80b8"
+    },
+    {
+        "function": "cryptonight",
+        "message": "0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f5051525354555657",
+        "digest": "0a3537292f4c65919ea80ce587d0e0876cb50acd6b1642861169ccb64ed77ce2"
+    },
+    {
+        "function": "cryptonight",
+        "message": "58595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3",
+        "digest": "cbc4245c25e375aea822e7b304342cf35830e86b8487749a22a62f897cda03ae"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeef",
+        "digest": "524f94589a20ab8126202f2a864cdd39e1db21ac298a46944670f64c067bf03a"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b",
+        "digest": "620262883e945de91a5e589c0bc21196616af1a0a20525f3a318e0c9a8292db1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f8081828384858687",
+        "digest": "d403f66912b429a2b3828bcef991f25e43d6a13bc388935668466bfc858531e5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "88898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3",
+        "digest": "de348ef43546d59ae9b03316a64f86af4ae89ea250cbfcfe87d3a0ab4df2cc8b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "digest": "a0e3cb159448e057059a139401d9d13724beca9b89e4093ed6ae47f43308811c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b",
+        "digest": "5acebff8c7e8b9f0e04b53f18ad24d9f70647bd88b092912a80059db1abf95cc"
+    },
+    {
+        "function": "cryptonight",
+        "message": "6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7",
+        "digest": "e6f5c6b7c36792b9146e953842934ad4ec8f21b19d2fc0b2b4949b7f6a21526b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff00010203",
+        "digest": "e9559900a67a69195d0ae829c3af3616fa4182568b7cdbb9f50ff005a753a3ba"
+    },
+    {
+        "function": "cryptonight",
+        "message": "0405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f",
+        "digest": "534236a07fb3e1c006e5d3b48265b85866d6c49da53923d05e379ad4e347ac2e"
+    },
+    {
+        "function": "cryptonight",
+        "message": "505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b",
+        "digest": "8f7712fb5563bc11ac2039851ea44870b4f9faa21be1a8896d1b9b05a6c27690"
+    },
+    {
+        "function": "cryptonight",
+        "message": "9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7",
+        "digest": "9dfbbecda2a8f6bfc909bcf8e8f5f0cdd3b0afd67a44101cc241821d59f35a07"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f30313233",
+        "digest": "6d5e4686f95a84af5d0fdc5c135214bebbf6d80bfebbb15c7b3649e0ef323bd1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "3435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f",
+        "digest": "eb915dd385045bc98aac6f27d9e1cb1d5de6a32645b77b6c59e683dcb954520c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacb",
+        "digest": "7bfd88e1916704032acda82ef53e6937e6224463167348a18df6f167ee92af8b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "cccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f1011121314151617",
+        "digest": "aa48cbcdd0bc3de508c0f145e366ee522714fcc17c9026b3b4dcb2c8810c28dd"
+    },
+    {
+        "function": "cryptonight",
+        "message": "18191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f60616263",
+        "digest": "ee4dac4d19e97bb755656361a9ebce1fcc61a714c28be3add10b51168a3f864d"
+    },
+    {
+        "function": "cryptonight",
+        "message": "6465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeaf",
+        "digest": "3e939bb031f40d7ea4e75c697848b2b97949d24a4ad88f0d830d2cc9925ee266"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafb",
+        "digest": "3d343ae5e8525d8ce61f86f11911d2860d04882f5ea6154c8b372bbfc8ca1a5f"
+    },
+    {
+        "function": "cryptonight",
+        "message": "fcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f4041424344454647",
+        "digest": "8909e4f72ecee31246092a801e303bff6108bc79118fa56692563a02050020cf"
+    },
+    {
+        "function": "cryptonight",
+        "message": "48494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f90919293",
+        "digest": "a17d69dcfd3de02194b7c380ec9a9083e45e33e290ad4a9be41288021a1907e2"
+    },
+    {
+        "function": "cryptonight",
+        "message": "9495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedf",
+        "digest": "9518202fa91acc4c83d3e90882a858666b12a7836dcf2ac232281a43fb3768ab"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b",
+        "digest": "fe6f3dfb48d8e6007eb8033efcee057fe723689ac6957eacad50ccbb76ee311c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f7071727374757677",
+        "digest": "92bfdfa7c95befe0ce0f40b80229da396eeeb0fcbeb5655f9c7c4c019dac24e3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "78797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3",
+        "digest": "2d27cd7716cfdfcf67897690b989876bfa3058fae5b8c33fd0655ff206968fb5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f",
+        "digest": "62a51de84deadf360e052e2badd59f26e1b85f3d17d6fcd6a95cd993111b3d31"
+    },
+    {
+        "function": "cryptonight",
+        "message": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b",
+        "digest": "6e39f3ae63cb72d96652e3a26e23a25ca31d23ae274e3dc2ac2a65b79bcd4b9a"
+    },
+    {
+        "function": "cryptonight",
+        "message": "5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7",
+        "digest": "38898f85219f9006f4686582f09d2d67d4368d1a2d6860d3bd5cbc56fb762169"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3",
+        "digest": "e95ec4524116190b7509385986e5e54f9573f2224b7f20f2faf0e27628bff55c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+        "digest": "d207d2bbcbdc304c236dc1b4bfb28be5902d8e5a2c1ec7bbd93a8d75461069b4"
+    },
+    {
+        "function": "cryptonight",
+        "message": "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b",
+        "digest": "b77142f77b4322a1e03e37d56c78dfc826fdbed5d39b56c2c119080416b0443d"
+    },
+    {
+        "function": "cryptonight",
+        "message": "8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7",
+        "digest": "e058dea078081f26e395b1d923d6618cc207a20e37863b9e1397cdee797a5c0f"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20212223",
+        "digest": "58c85e850650b85f72358fc6503af024da0df3e624400294c7240e0a7943a8a1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "2425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f",
+        "digest": "9b30c42e4aacc3c2df862e79e2cec6228af4084816b85d44a7a265d71faa61fb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babb",
+        "digest": "d95e806d2d6d01094c25b6b89357a6b251643543ba2c89fa69a543aaf5d9b677"
+    },
+    {
+        "function": "cryptonight",
+        "message": "bcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff0001020304050607",
+        "digest": "53051889e212f2d1bc977406ccb180ee55691f24179d497ed56fce7a9cf012f3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f50515253",
+        "digest": "309f8b148e3d3b056c5ea530202a66b6a80122e6e48f5854158d402f629591f1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "5455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9f",
+        "digest": "b53e40fcd1956abbfaaf8444500566bcfd39028783fb93314502ba1bd6c4da23"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaeb",
+        "digest": "8c07770b24f9f5fe9bc8ea37eadbd9e2975e1288be108046ff5d5d9163d85b95"
+    },
+    {
+        "function": "cryptonight",
+        "message": "ecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637",
+        "digest": "1b148df7f51cfd5d1354d6309dabb38103df85bb6de1d93e39b03c967f5ca3b3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "38393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f80818283",
+        "digest": "4628e8187dab07f27c07b34f5dfa12ab324da5703900ec5d5dcdee0eca391c16"
+    },
+    {
+        "function": "cryptonight",
+        "message": "8485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecf",
+        "digest": "b987bdda75eb90428c11aa36acbdde877fded0ec0949bc9c10739cc1fc0e8dfb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b",
+        "digest": "22b10014de55eab9f4fa49a35ee094e501a5f83e021d0d576570f5a5c21c6320"
+    },
+    {
+        "function": "cryptonight",
+        "message": "1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f6061626364656667",
+        "digest": "5dcc98e7fa6e4b429478754e87ac5d16229b5c1a98fb7eeadfe8efdbeb6d72a9"
+    },
+    {
+        "function": "cryptonight",
+        "message": "68696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3",
+        "digest": "f42f72434d1260b3e2764ee880858260209d45232aa615e31be8cfcd4f32c237"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+        "digest": "cd1a5518c6769c7ca33a6dc488edcffe4711a16bfd8bed1f8c239d5490e31487"
+    },
+    {
+        "function": "cryptonight",
+        "message": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b",
+        "digest": "f6cb9c11f00543bab31ad730687d5df828118e8e5ed678ff73ae483c23785386"
+    },
+    {
+        "function": "cryptonight",
+        "message": "4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f9091929394959697",
+        "digest": "090984c7d67d0168e95db74f266e330aeeeef3da7a40bb24d351381e53feb0a5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "98999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3",
+        "digest": "7353f3ea6e2b1143641f2fc625991b230aeac0baebe426e40726423e2f2c0359"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f",
+        "digest": "f01bf5316fe99e0c2619deb1b679e350958020d0172f7834674b037d5b639571"
+    },
+    {
+        "function": "cryptonight",
+        "message": "303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b",
+        "digest": "c7a7a299c4edc6e3795e6aba0b2a5d5e35452020098c9202b2a13b3a9d597af3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7",
+        "digest": "5596bf128453e9feeb3ac97a3df539f9f716f15ba11d80c16b41835310d57875"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f10111213",
+        "digest": "b8c084a72c9cd39bb445b5a92eec0f1955fe7ae1d1fa955881c21f2c9a91cdea"
+    },
+    {
+        "function": "cryptonight",
+        "message": "1415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f",
+        "digest": "40f934eb438d3edaa70f4ad9f61b394ff577b7cc5efaf0249de3822a54ae233e"
+    },
+    {
+        "function": "cryptonight",
+        "message": "606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaab",
+        "digest": "bee55f71f42c482260666f901aa06fee6ceb08c8f7d7a79071f8f1016d2bfd5b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "acadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7",
+        "digest": "5200cd0b9b990345006b050661f898fa0eefd7bbd55e0e8cd5eb40daa894f3e3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40414243",
+        "digest": "7f9ba9856d1e8ecdefc96b26b9fa822c4a6b9a35aa8fd8a8599f4aeef157c2fb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "4445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f",
+        "digest": "1f26c31a6ae16727506b6ed895e6b7eec234e5e14422823534df58377e72f583"
+    },
+    {
+        "function": "cryptonight",
+        "message": "909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadb",
+        "digest": "b190a5a0ed3ef046a5ee7502f3c62ab73e7386471014d27643f374a01bd1d479"
+    },
+    {
+        "function": "cryptonight",
+        "message": "dcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f2021222324252627",
+        "digest": "9b81b9f220b2ea39f971deabbaf4d1afa3301ded2322e7eeba1b51c8747e8ee4"
+    },
+    {
+        "function": "cryptonight",
+        "message": "28292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f70717273",
+        "digest": "7b68fe48e8d46b85e2e1ab09941f1257addd6d892dbd0048317210793787edee"
+    },
+    {
+        "function": "cryptonight",
+        "message": "7475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf",
+        "digest": "6bb38d76f4f9897a6ed8195c51c9abf0303b8b339858922f9a1f37e957f143e5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b",
+        "digest": "beac71b360d22c9146c357143dd48c475a2a63d3ea1b760a730d53c3fb3c80b8"
+    },
+    {
+        "function": "cryptonight",
+        "message": "0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f5051525354555657",
+        "digest": "0a3537292f4c65919ea80ce587d0e0876cb50acd6b1642861169ccb64ed77ce2"
+    },
+    {
+        "function": "cryptonight",
+        "message": "58595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3",
+        "digest": "cbc4245c25e375aea822e7b304342cf35830e86b8487749a22a62f897cda03ae"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeef",
+        "digest": "524f94589a20ab8126202f2a864cdd39e1db21ac298a46944670f64c067bf03a"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b",
+        "digest": "620262883e945de91a5e589c0bc21196616af1a0a20525f3a318e0c9a8292db1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f8081828384858687",
+        "digest": "d403f66912b429a2b3828bcef991f25e43d6a13bc388935668466bfc858531e5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "88898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3",
+        "digest": "de348ef43546d59ae9b03316a64f86af4ae89ea250cbfcfe87d3a0ab4df2cc8b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "digest": "a0e3cb159448e057059a139401d9d13724beca9b89e4093ed6ae47f43308811c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b",
+        "digest": "5acebff8c7e8b9f0e04b53f18ad24d9f70647bd88b092912a80059db1abf95cc"
+    },
+    {
+        "function": "cryptonight",
+        "message": "6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7",
+        "digest": "e6f5c6b7c36792b9146e953842934ad4ec8f21b19d2fc0b2b4949b7f6a21526b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff00010203",
+        "digest": "e9559900a67a69195d0ae829c3af3616fa4182568b7cdbb9f50ff005a753a3ba"
+    },
+    {
+        "function": "cryptonight",
+        "message": "0405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f",
+        "digest": "534236a07fb3e1c006e5d3b48265b85866d6c49da53923d05e379ad4e347ac2e"
+    },
+    {
+        "function": "cryptonight",
+        "message": "505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b",
+        "digest": "8f7712fb5563bc11ac2039851ea44870b4f9faa21be1a8896d1b9b05a6c27690"
+    },
+    {
+        "function": "cryptonight",
+        "message": "9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7",
+        "digest": "9dfbbecda2a8f6bfc909bcf8e8f5f0cdd3b0afd67a44101cc241821d59f35a07"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f30313233",
+        "digest": "6d5e4686f95a84af5d0fdc5c135214bebbf6d80bfebbb15c7b3649e0ef323bd1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "3435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f",
+        "digest": "eb915dd385045bc98aac6f27d9e1cb1d5de6a32645b77b6c59e683dcb954520c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacb",
+        "digest": "7bfd88e1916704032acda82ef53e6937e6224463167348a18df6f167ee92af8b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "cccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f1011121314151617",
+        "digest": "aa48cbcdd0bc3de508c0f145e366ee522714fcc17c9026b3b4dcb2c8810c28dd"
+    },
+    {
+        "function": "cryptonight",
+        "message": "18191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f60616263",
+        "digest": "ee4dac4d19e97bb755656361a9ebce1fcc61a714c28be3add10b51168a3f864d"
+    },
+    {
+        "function": "cryptonight",
+        "message": "6465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeaf",
+        "digest": "3e939bb031f40d7ea4e75c697848b2b97949d24a4ad88f0d830d2cc9925ee266"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafb",
+        "digest": "3d343ae5e8525d8ce61f86f11911d2860d04882f5ea6154c8b372bbfc8ca1a5f"
+    },
+    {
+        "function": "cryptonight",
+        "message": "fcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f4041424344454647",
+        "digest": "8909e4f72ecee31246092a801e303bff6108bc79118fa56692563a02050020cf"
+    },
+    {
+        "function": "cryptonight",
+        "message": "48494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f90919293",
+        "digest": "a17d69dcfd3de02194b7c380ec9a9083e45e33e290ad4a9be41288021a1907e2"
+    },
+    {
+        "function": "cryptonight",
+        "message": "9495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedf",
+        "digest": "9518202fa91acc4c83d3e90882a858666b12a7836dcf2ac232281a43fb3768ab"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b",
+        "digest": "fe6f3dfb48d8e6007eb8033efcee057fe723689ac6957eacad50ccbb76ee311c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f7071727374757677",
+        "digest": "92bfdfa7c95befe0ce0f40b80229da396eeeb0fcbeb5655f9c7c4c019dac24e3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "78797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3",
+        "digest": "2d27cd7716cfdfcf67897690b989876bfa3058fae5b8c33fd0655ff206968fb5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f",
+        "digest": "62a51de84deadf360e052e2badd59f26e1b85f3d17d6fcd6a95cd993111b3d31"
+    },
+    {
+        "function": "cryptonight",
+        "message": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b",
+        "digest": "6e39f3ae63cb72d96652e3a26e23a25ca31d23ae274e3dc2ac2a65b79bcd4b9a"
+    },
+    {
+        "function": "cryptonight",
+        "message": "5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7",
+        "digest": "38898f85219f9006f4686582f09d2d67d4368d1a2d6860d3bd5cbc56fb762169"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3",
+        "digest": "e95ec4524116190b7509385986e5e54f9573f2224b7f20f2faf0e27628bff55c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+        "digest": "d207d2bbcbdc304c236dc1b4bfb28be5902d8e5a2c1ec7bbd93a8d75461069b4"
+    },
+    {
+        "function": "cryptonight",
+        "message": "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b",
+        "digest": "b77142f77b4322a1e03e37d56c78dfc826fdbed5d39b56c2c119080416b0443d"
+    },
+    {
+        "function": "cryptonight",
+        "message": "8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7",
+        "digest": "e058dea078081f26e395b1d923d6618cc207a20e37863b9e1397cdee797a5c0f"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20212223",
+        "digest": "58c85e850650b85f72358fc6503af024da0df3e624400294c7240e0a7943a8a1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "2425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f",
+        "digest": "9b30c42e4aacc3c2df862e79e2cec6228af4084816b85d44a7a265d71faa61fb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babb",
+        "digest": "d95e806d2d6d01094c25b6b89357a6b251643543ba2c89fa69a543aaf5d9b677"
+    },
+    {
+        "function": "cryptonight",
+        "message": "bcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff0001020304050607",
+        "digest": "53051889e212f2d1bc977406ccb180ee55691f24179d497ed56fce7a9cf012f3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f50515253",
+        "digest": "309f8b148e3d3b056c5ea530202a66b6a80122e6e48f5854158d402f629591f1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "5455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9f",
+        "digest": "b53e40fcd1956abbfaaf8444500566bcfd39028783fb93314502ba1bd6c4da23"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaeb",
+        "digest": "8c07770b24f9f5fe9bc8ea37eadbd9e2975e1288be108046ff5d5d9163d85b95"
+    },
+    {
+        "function": "cryptonight",
+        "message": "ecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637",
+        "digest": "1b148df7f51cfd5d1354d6309dabb38103df85bb6de1d93e39b03c967f5ca3b3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "38393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f80818283",
+        "digest": "4628e8187dab07f27c07b34f5dfa12ab324da5703900ec5d5dcdee0eca391c16"
+    },
+    {
+        "function": "cryptonight",
+        "message": "8485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecf",
+        "digest": "b987bdda75eb90428c11aa36acbdde877fded0ec0949bc9c10739cc1fc0e8dfb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b",
+        "digest": "22b10014de55eab9f4fa49a35ee094e501a5f83e021d0d576570f5a5c21c6320"
+    },
+    {
+        "function": "cryptonight",
+        "message": "1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f6061626364656667",
+        "digest": "5dcc98e7fa6e4b429478754e87ac5d16229b5c1a98fb7eeadfe8efdbeb6d72a9"
+    },
+    {
+        "function": "cryptonight",
+        "message": "68696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3",
+        "digest": "f42f72434d1260b3e2764ee880858260209d45232aa615e31be8cfcd4f32c237"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+        "digest": "cd1a5518c6769c7ca33a6dc488edcffe4711a16bfd8bed1f8c239d5490e31487"
+    },
+    {
+        "function": "cryptonight",
+        "message": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b",
+        "digest": "f6cb9c11f00543bab31ad730687d5df828118e8e5ed678ff73ae483c23785386"
+    },
+    {
+        "function": "cryptonight",
+        "message": "4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f9091929394959697",
+        "digest": "090984c7d67d0168e95db74f266e330aeeeef3da7a40bb24d351381e53feb0a5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "98999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3",
+        "digest": "7353f3ea6e2b1143641f2fc625991b230aeac0baebe426e40726423e2f2c0359"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f",
+        "digest": "f01bf5316fe99e0c2619deb1b679e350958020d0172f7834674b037d5b639571"
+    },
+    {
+        "function": "cryptonight",
+        "message": "303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b",
+        "digest": "c7a7a299c4edc6e3795e6aba0b2a5d5e35452020098c9202b2a13b3a9d597af3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7",
+        "digest": "5596bf128453e9feeb3ac97a3df539f9f716f15ba11d80c16b41835310d57875"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f10111213",
+        "digest": "b8c084a72c9cd39bb445b5a92eec0f1955fe7ae1d1fa955881c21f2c9a91cdea"
+    },
+    {
+        "function": "cryptonight",
+        "message": "1415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f",
+        "digest": "40f934eb438d3edaa70f4ad9f61b394ff577b7cc5efaf0249de3822a54ae233e"
+    },
+    {
+        "function": "cryptonight",
+        "message": "606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaab",
+        "digest": "bee55f71f42c482260666f901aa06fee6ceb08c8f7d7a79071f8f1016d2bfd5b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "acadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7",
+        "digest": "5200cd0b9b990345006b050661f898fa0eefd7bbd55e0e8cd5eb40daa894f3e3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40414243",
+        "digest": "7f9ba9856d1e8ecdefc96b26b9fa822c4a6b9a35aa8fd8a8599f4aeef157c2fb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "4445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f",
+        "digest": "1f26c31a6ae16727506b6ed895e6b7eec234e5e14422823534df58377e72f583"
+    },
+    {
+        "function": "cryptonight",
+        "message": "909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadb",
+        "digest": "b190a5a0ed3ef046a5ee7502f3c62ab73e7386471014d27643f374a01bd1d479"
+    },
+    {
+        "function": "cryptonight",
+        "message": "dcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f2021222324252627",
+        "digest": "9b81b9f220b2ea39f971deabbaf4d1afa3301ded2322e7eeba1b51c8747e8ee4"
+    },
+    {
+        "function": "cryptonight",
+        "message": "28292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f70717273",
+        "digest": "7b68fe48e8d46b85e2e1ab09941f1257addd6d892dbd0048317210793787edee"
+    },
+    {
+        "function": "cryptonight",
+        "message": "7475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf",
+        "digest": "6bb38d76f4f9897a6ed8195c51c9abf0303b8b339858922f9a1f37e957f143e5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b",
+        "digest": "beac71b360d22c9146c357143dd48c475a2a63d3ea1b760a730d53c3fb3c80b8"
+    },
+    {
+        "function": "cryptonight",
+        "message": "0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f5051525354555657",
+        "digest": "0a3537292f4c65919ea80ce587d0e0876cb50acd6b1642861169ccb64ed77ce2"
+    },
+    {
+        "function": "cryptonight",
+        "message": "58595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3",
+        "digest": "cbc4245c25e375aea822e7b304342cf35830e86b8487749a22a62f897cda03ae"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeef",
+        "digest": "524f94589a20ab8126202f2a864cdd39e1db21ac298a46944670f64c067bf03a"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b",
+        "digest": "620262883e945de91a5e589c0bc21196616af1a0a20525f3a318e0c9a8292db1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f8081828384858687",
+        "digest": "d403f66912b429a2b3828bcef991f25e43d6a13bc388935668466bfc858531e5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "88898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3",
+        "digest": "de348ef43546d59ae9b03316a64f86af4ae89ea250cbfcfe87d3a0ab4df2cc8b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "digest": "a0e3cb159448e057059a139401d9d13724beca9b89e4093ed6ae47f43308811c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b",
+        "digest": "5acebff8c7e8b9f0e04b53f18ad24d9f70647bd88b092912a80059db1abf95cc"
+    },
+    {
+        "function": "cryptonight",
+        "message": "6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7",
+        "digest": "e6f5c6b7c36792b9146e953842934ad4ec8f21b19d2fc0b2b4949b7f6a21526b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff00010203",
+        "digest": "e9559900a67a69195d0ae829c3af3616fa4182568b7cdbb9f50ff005a753a3ba"
+    },
+    {
+        "function": "cryptonight",
+        "message": "0405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f",
+        "digest": "534236a07fb3e1c006e5d3b48265b85866d6c49da53923d05e379ad4e347ac2e"
+    },
+    {
+        "function": "cryptonight",
+        "message": "505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b",
+        "digest": "8f7712fb5563bc11ac2039851ea44870b4f9faa21be1a8896d1b9b05a6c27690"
+    },
+    {
+        "function": "cryptonight",
+        "message": "9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7",
+        "digest": "9dfbbecda2a8f6bfc909bcf8e8f5f0cdd3b0afd67a44101cc241821d59f35a07"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f30313233",
+        "digest": "6d5e4686f95a84af5d0fdc5c135214bebbf6d80bfebbb15c7b3649e0ef323bd1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "3435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f",
+        "digest": "eb915dd385045bc98aac6f27d9e1cb1d5de6a32645b77b6c59e683dcb954520c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacb",
+        "digest": "7bfd88e1916704032acda82ef53e6937e6224463167348a18df6f167ee92af8b"
+    },
+    {
+        "function": "cryptonight",
+        "message": "cccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f1011121314151617",
+        "digest": "aa48cbcdd0bc3de508c0f145e366ee522714fcc17c9026b3b4dcb2c8810c28dd"
+    },
+    {
+        "function": "cryptonight",
+        "message": "18191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f60616263",
+        "digest": "ee4dac4d19e97bb755656361a9ebce1fcc61a714c28be3add10b51168a3f864d"
+    },
+    {
+        "function": "cryptonight",
+        "message": "6465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeaf",
+        "digest": "3e939bb031f40d7ea4e75c697848b2b97949d24a4ad88f0d830d2cc9925ee266"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafb",
+        "digest": "3d343ae5e8525d8ce61f86f11911d2860d04882f5ea6154c8b372bbfc8ca1a5f"
+    },
+    {
+        "function": "cryptonight",
+        "message": "fcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f4041424344454647",
+        "digest": "8909e4f72ecee31246092a801e303bff6108bc79118fa56692563a02050020cf"
+    },
+    {
+        "function": "cryptonight",
+        "message": "48494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f90919293",
+        "digest": "a17d69dcfd3de02194b7c380ec9a9083e45e33e290ad4a9be41288021a1907e2"
+    },
+    {
+        "function": "cryptonight",
+        "message": "9495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedf",
+        "digest": "9518202fa91acc4c83d3e90882a858666b12a7836dcf2ac232281a43fb3768ab"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b",
+        "digest": "fe6f3dfb48d8e6007eb8033efcee057fe723689ac6957eacad50ccbb76ee311c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f7071727374757677",
+        "digest": "92bfdfa7c95befe0ce0f40b80229da396eeeb0fcbeb5655f9c7c4c019dac24e3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "78797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3",
+        "digest": "2d27cd7716cfdfcf67897690b989876bfa3058fae5b8c33fd0655ff206968fb5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f",
+        "digest": "62a51de84deadf360e052e2badd59f26e1b85f3d17d6fcd6a95cd993111b3d31"
+    },
+    {
+        "function": "cryptonight",
+        "message": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b",
+        "digest": "6e39f3ae63cb72d96652e3a26e23a25ca31d23ae274e3dc2ac2a65b79bcd4b9a"
+    },
+    {
+        "function": "cryptonight",
+        "message": "5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7",
+        "digest": "38898f85219f9006f4686582f09d2d67d4368d1a2d6860d3bd5cbc56fb762169"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3",
+        "digest": "e95ec4524116190b7509385986e5e54f9573f2224b7f20f2faf0e27628bff55c"
+    },
+    {
+        "function": "cryptonight",
+        "message": "f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+        "digest": "d207d2bbcbdc304c236dc1b4bfb28be5902d8e5a2c1ec7bbd93a8d75461069b4"
+    },
+    {
+        "function": "cryptonight",
+        "message": "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b",
+        "digest": "b77142f77b4322a1e03e37d56c78dfc826fdbed5d39b56c2c119080416b0443d"
+    },
+    {
+        "function": "cryptonight",
+        "message": "8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7",
+        "digest": "e058dea078081f26e395b1d923d6618cc207a20e37863b9e1397cdee797a5c0f"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20212223",
+        "digest": "58c85e850650b85f72358fc6503af024da0df3e624400294c7240e0a7943a8a1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "2425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f",
+        "digest": "9b30c42e4aacc3c2df862e79e2cec6228af4084816b85d44a7a265d71faa61fb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babb",
+        "digest": "d95e806d2d6d01094c25b6b89357a6b251643543ba2c89fa69a543aaf5d9b677"
+    },
+    {
+        "function": "cryptonight",
+        "message": "bcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff0001020304050607",
+        "digest": "53051889e212f2d1bc977406ccb180ee55691f24179d497ed56fce7a9cf012f3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f50515253",
+        "digest": "309f8b148e3d3b056c5ea530202a66b6a80122e6e48f5854158d402f629591f1"
+    },
+    {
+        "function": "cryptonight",
+        "message": "5455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9f",
+        "digest": "b53e40fcd1956abbfaaf8444500566bcfd39028783fb93314502ba1bd6c4da23"
+    },
+    {
+        "function": "cryptonight",
+        "message": "a0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaeb",
+        "digest": "8c07770b24f9f5fe9bc8ea37eadbd9e2975e1288be108046ff5d5d9163d85b95"
+    },
+    {
+        "function": "cryptonight",
+        "message": "ecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637",
+        "digest": "1b148df7f51cfd5d1354d6309dabb38103df85bb6de1d93e39b03c967f5ca3b3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "38393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f80818283",
+        "digest": "4628e8187dab07f27c07b34f5dfa12ab324da5703900ec5d5dcdee0eca391c16"
+    },
+    {
+        "function": "cryptonight",
+        "message": "8485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecf",
+        "digest": "b987bdda75eb90428c11aa36acbdde877fded0ec0949bc9c10739cc1fc0e8dfb"
+    },
+    {
+        "function": "cryptonight",
+        "message": "d0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b",
+        "digest": "22b10014de55eab9f4fa49a35ee094e501a5f83e021d0d576570f5a5c21c6320"
+    },
+    {
+        "function": "cryptonight",
+        "message": "1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f6061626364656667",
+        "digest": "5dcc98e7fa6e4b429478754e87ac5d16229b5c1a98fb7eeadfe8efdbeb6d72a9"
+    },
+    {
+        "function": "cryptonight",
+        "message": "68696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3",
+        "digest": "f42f72434d1260b3e2764ee880858260209d45232aa615e31be8cfcd4f32c237"
+    },
+    {
+        "function": "cryptonight",
+        "message": "b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+        "digest": "cd1a5518c6769c7ca33a6dc488edcffe4711a16bfd8bed1f8c239d5490e31487"
+    },
+    {
+        "function": "cryptonight",
+        "message": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b",
+        "digest": "f6cb9c11f00543bab31ad730687d5df828118e8e5ed678ff73ae483c23785386"
+    },
+    {
+        "function": "cryptonight",
+        "message": "4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f9091929394959697",
+        "digest": "090984c7d67d0168e95db74f266e330aeeeef3da7a40bb24d351381e53feb0a5"
+    },
+    {
+        "function": "cryptonight",
+        "message": "98999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3",
+        "digest": "7353f3ea6e2b1143641f2fc625991b230aeac0baebe426e40726423e2f2c0359"
+    },
+    {
+        "function": "cryptonight",
+        "message": "e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f",
+        "digest": "f01bf5316fe99e0c2619deb1b679e350958020d0172f7834674b037d5b639571"
+    },
+    {
+        "function": "cryptonight",
+        "message": "303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b",
+        "digest": "c7a7a299c4edc6e3795e6aba0b2a5d5e35452020098c9202b2a13b3a9d597af3"
+    },
+    {
+        "function": "cryptonight",
+        "message": "7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7",
+        "digest": "5596bf128453e9feeb3ac97a3df539f9f716f15ba11d80c16b41835310d57875"
+    },
+    {
+        "function": "cryptonight",
+        "message": "c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f10111213",
+        "digest": "b8c084a72c9cd39bb445b5a92eec0f1955fe7ae1d1fa955881c21f2c9a91cdea"
+    },
+    {
+        "function": "cryptonight",
+        "message": "1415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f",
+        "digest": "40f934eb438d3edaa70f4ad9f61b394ff577b7cc5efaf0249de3822a54ae233e"
+    }
+]

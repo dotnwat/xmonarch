@@ -7,6 +7,7 @@
 #include "jh.h"
 #include "skein.h"
 #include "keccak.h"
+#include "cryptonight.h"
 #include "oaes_lib.h"
 #include "json.hpp"
 
@@ -83,6 +84,9 @@ static bool test_hash(const std::string& func,
     oaes_key_import_data(ctx, message_bin, 32);
     assert(ctx->key->exp_data_len <= sizeof(digest_bin));
     memcpy(digest_bin, ctx->key->exp_data, ctx->key->exp_data_len);
+  } else if (func == "cryptonight") {
+    assert(sizeof(message_bin) == 76);
+    cryptonight(digest_bin, message_bin, 76);
   } else {
     assert(0);
     return false;
