@@ -6,7 +6,8 @@ CXXFLAGS = -Wall --std=c++11 $(OPT_LEVEL)
 PROGS = hash_test hash_test.js hash_test2 hash_test2.js
 all: $(PROGS)
 
-OBJS = keccak.o jh_ansi_opt64.o blake.o skein.o groestl.o oaes_lib.o
+OBJS = keccak.o jh_ansi_opt64.o blake.o skein.o groestl.o \
+	   oaes_lib.o cryptonight.o
 EM_OBJS = $(OBJS:.o=.js.o)
 
 # emscripten docker
@@ -20,6 +21,9 @@ $(EM_OBJS): %.js.o: %.c
 
 %.js: %.cc
 	$(EM++) $(CXXFLAGS) -o $@ $^
+
+%.js: %.c
+	$(EMCC) $(CFLAGS) -o $@ $^
 
 hash_test: $(OBJS)
 
