@@ -27,7 +27,7 @@ function compare() {
 for optlevel in "" -O0 -O1 -O2 -O3; do
   make clean
   make OPT_LEVEL=$optlevel -j$(nproc)
-  for run in {1..100}; do
+  for run in {1..10}; do
     size1=$((1 + RANDOM % 128))
     size2=$((129 + RANDOM % 1000000))
     for size in 10 $size1 $size2 39; do
