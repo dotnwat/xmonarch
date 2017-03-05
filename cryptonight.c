@@ -17,7 +17,7 @@
 #define INIT_SIZE_BYTE (INIT_SIZE_BLK * AES_BLOCK_SIZE)	// 128
 
 void do_blake_hash(const void* input, size_t len, char* output) {
-    blake(input, len, output);
+    blake(input, len, (unsigned char *)output);
 }
 
 void do_groestl_hash(const void* input, size_t len, char* output) {
@@ -35,7 +35,7 @@ void do_skein_hash(const void* input, size_t len, char* output) {
 void (* const extra_hashes[4])(const void *, size_t, char *) = {
 	do_blake_hash, do_groestl_hash, do_jh_hash, do_skein_hash};
 
-void xor_blocks_dst(const uint8_t *restrict a, const uint8_t *restrict b, uint8_t *restrict dst) {
+void xor_blocks_dst(const uint8_t * a, const uint8_t * b, uint8_t * dst) {
     ((uint64_t*) dst)[0] = ((uint64_t*) a)[0] ^ ((uint64_t*) b)[0];
     ((uint64_t*) dst)[1] = ((uint64_t*) a)[1] ^ ((uint64_t*) b)[1];
 }
@@ -247,14 +247,14 @@ static inline void mul_sum_xor_dst(const uint8_t *a, uint8_t *c, uint8_t *dst)
     ((uint64_t *)dst)[1] = lo;
 }
 
-static inline void xor_blocks(uint8_t *restrict a, const uint8_t *restrict b) {
+static inline void xor_blocks(uint8_t * a, const uint8_t * b) {
     ((uint64_t*) a)[0] ^= ((uint64_t*) b)[0];
     ((uint64_t*) a)[1] ^= ((uint64_t*) b)[1];
 }
 
-static inline void SubAndShiftAndMixAddRound(uint32_t *restrict out, uint32_t *temp, uint32_t *restrict AesEncKey)
+static inline void SubAndShiftAndMixAddRound(uint32_t * out, uint32_t *temp, uint32_t * AesEncKey)
 {
-	uint8_t *state = &temp[0];
+	uint8_t *state = (uint8_t *)&temp[0];
 	
 	out[0]= TestTable1[state[0]] ^ TestTable2[state[5]] ^ TestTable3[state[10]] ^ TestTable4[state[15]] ^ AesEncKey[0];
 	out[1]= TestTable4[state[3]] ^ TestTable1[state[4]] ^ TestTable2[state[9]]  ^ TestTable3[state[14]] ^ AesEncKey[1];
@@ -262,7 +262,7 @@ static inline void SubAndShiftAndMixAddRound(uint32_t *restrict out, uint32_t *t
 	out[3]= TestTable2[state[1]] ^ TestTable3[state[6]] ^ TestTable4[state[11]] ^ TestTable1[state[12]] ^ AesEncKey[3];
 }
 
-static inline void SubAndShiftAndMixAddRoundInPlace(uint32_t *restrict temp, uint32_t *restrict AesEncKey)
+static inline void SubAndShiftAndMixAddRoundInPlace(uint32_t * temp, uint32_t * AesEncKey)
 {
 	uint8_t state[16];
 	memcpy(state, temp, 16);
@@ -273,12 +273,12 @@ static inline void SubAndShiftAndMixAddRoundInPlace(uint32_t *restrict temp, uin
 	temp[3]= TestTable2[state[1]] ^ TestTable3[state[6]] ^ TestTable4[state[11]] ^ TestTable1[state[12]] ^ AesEncKey[3];
 }
 
-void cryptonight_hash_ctx(void *restrict output, const void *restrict input, struct cryptonight_ctx *restrict ctx) {
+void cryptonight_hash_ctx(void * output, const void * input, struct cryptonight_ctx * ctx) {
     
     ctx->aes_ctx = (oaes_ctx*) oaes_alloc();
     size_t i, j;
     //hash_process(&ctx->state.hs, (const uint8_t*) input, 76);
-    keccak((const uint8_t *)input, 76, &ctx->state.hs, 200);
+    keccak((const uint8_t *)input, 76, ctx->state.hs.b, 200);
     memcpy(ctx->text, ctx->state.init, INIT_SIZE_BYTE);
     
     oaes_key_import_data(ctx->aes_ctx, ctx->state.hs.b, AES_KEY_SIZE);
@@ -287,14 +287,14 @@ void cryptonight_hash_ctx(void *restrict output, const void *restrict input, str
     {
 		for(j = 0; j < 10; j++)
 		{
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x10], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x20], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x30], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x40], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x50], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x60], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x70], &ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0],    (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x10], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x20], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x30], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x40], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x50], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x60], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x70], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
 		}
 		memcpy(&ctx->long_state[i], ctx->text, INIT_SIZE_BYTE);
 	}
@@ -314,12 +314,12 @@ void cryptonight_hash_ctx(void *restrict output, const void *restrict input, str
         // next address  <-+
         //
         // Iteration 1 
-        SubAndShiftAndMixAddRound(ctx->c, &ctx->long_state[((uint64_t *)(ctx->a))[0] & 0x1FFFF0], ctx->a);
+        SubAndShiftAndMixAddRound((uint32_t *)ctx->c, (uint32_t *)&ctx->long_state[((uint64_t *)(ctx->a))[0] & 0x1FFFF0], (uint32_t *)ctx->a);
         xor_blocks_dst(ctx->c, ctx->b, &ctx->long_state[((uint64_t *)(ctx->a))[0] & 0x1FFFF0]);
         // Iteration 2 
         mul_sum_xor_dst(ctx->c, ctx->a, &ctx->long_state[((uint64_t *)(ctx->c))[0] & 0x1FFFF0]);
         // Iteration 3 
-        SubAndShiftAndMixAddRound(ctx->b, &ctx->long_state[((uint64_t *)(ctx->a))[0] & 0x1FFFF0], ctx->a);
+        SubAndShiftAndMixAddRound((uint32_t *)ctx->b, (uint32_t *)&ctx->long_state[((uint64_t *)(ctx->a))[0] & 0x1FFFF0], (uint32_t *)ctx->a);
         xor_blocks_dst(ctx->b, ctx->c, &ctx->long_state[((uint64_t *)(ctx->a))[0] & 0x1FFFF0]);
         // Iteration 4 
         mul_sum_xor_dst(ctx->b, ctx->a, &ctx->long_state[((uint64_t *)(ctx->b))[0] & 0x1FFFF0]);
@@ -341,21 +341,21 @@ void cryptonight_hash_ctx(void *restrict output, const void *restrict input, str
 		
 		for(j = 0; j < 10; j++)
 		{
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x10], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x20], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x30], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x40], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x50], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x60], &ctx->aes_ctx->key->exp_data[j << 4]);
-			SubAndShiftAndMixAddRoundInPlace(&ctx->text[0x70], &ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0],    (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x10], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x20], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x30], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x40], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x50], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x60], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
+			SubAndShiftAndMixAddRoundInPlace((uint32_t *)&ctx->text[0x70], (uint32_t *)&ctx->aes_ctx->key->exp_data[j << 4]);
 		}
 	}
 
 		
     memcpy(ctx->state.init, ctx->text, INIT_SIZE_BYTE);
     //hash_permutation(&ctx->state.hs);
-    keccakf(&ctx->state.hs, 24);
+    keccakf((uint64_t *)ctx->state.hs.b, 24);
     /*memcpy(hash, &state, 32);*/
     extra_hashes[ctx->state.hs.b[0] & 3](&ctx->state, 200, output);
     oaes_free((OAES_CTX **) &ctx->aes_ctx);
