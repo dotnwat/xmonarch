@@ -1,7 +1,8 @@
 #!/bin/bash
 
 set -e
-set -x
+
+: ${OPT_LEVEL:=""}
 
 function compare() {
   local size=$1
@@ -23,10 +24,9 @@ function compare() {
   rm $input $out0 $out1
 }
 
-# TODO: unify the loops by specifying per-algo min input sizes
-for optlevel in "" -O0 -O1 -O2 -O3; do
+function build_and_run() {
   make clean
-  make OPT_LEVEL=$optlevel -j$(nproc)
+  make -j$(nproc)
   for run in {1..10}; do
     size1=$((1 + RANDOM % 128))
     size2=$((129 + RANDOM % 1000000))
@@ -42,7 +42,10 @@ for optlevel in "" -O0 -O1 -O2 -O3; do
     done
   done
   for vecfile in blake groestl jh keccak keccakf oaes_key_import_data skein cryptonight; do
+    echo "testing $vecfile vectors"
     cat ${vecfile}.json | ./hash_test2
     cat ${vecfile}.json | node hash_test2.js
   done
-done
+}
+
+build_and_run
