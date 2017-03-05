@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-extern void groestl(unsigned char *input,
+extern void groestl(const unsigned char *input,
     unsigned long long len,
     unsigned char *output);
 
