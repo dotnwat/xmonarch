@@ -4,7 +4,7 @@
 #include <string.h>
 #include "blake.h"
 #include "groestl.h"
-#include "jh.h"
+#include "jh/jh.h"
 #include "skein.h"
 #include "keccak.h"
 #include "cryptonight.h"

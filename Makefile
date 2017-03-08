@@ -15,9 +15,9 @@ OBJS = keccak.o blake.o skein.o groestl.o \
 	   oaes_lib.o cryptonight.o
 
 ifeq ($(USE_SSE2),1)
-OBJS += jh_sse2_opt64.o
+OBJS += jh/jh_sse2_opt64.o
 else
-OBJS += jh_ansi_opt64.o
+OBJS += jh/jh_ansi_opt64.o
 endif
 
 EM_OBJS = $(OBJS:.o=.js.o)
