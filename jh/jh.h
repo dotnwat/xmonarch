@@ -1,12 +1,13 @@
 #ifndef JH_H
 #define JH_H
+#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-extern int jh(int hashbitlen, const unsigned char *input,
-    unsigned long long input_len, unsigned char *output);
+extern void jh(unsigned bit_len, const uint8_t input[],
+    size_t input_bit_length, uint8_t output[]);
 
 #ifdef __cplusplus
 }
