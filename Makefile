@@ -1,13 +1,25 @@
 OPT_LEVEL ?=
+USE_SSE2 ?=
 
 CFLAGS = -Wall -Werror -fno-strict-aliasing $(OPT_LEVEL)
 CXXFLAGS = -Wall -Werror --std=c++11 $(OPT_LEVEL)
 
+ifeq ($(USE_SSE2),1)
+CFLAGS += -msse2
+endif
+
 PROGS = hash_test hash_test.js hash_test2 hash_test2.js
 all: $(PROGS)
 
-OBJS = keccak.o jh_ansi_opt64.o blake.o skein.o groestl.o \
+OBJS = keccak.o blake.o skein.o groestl.o \
 	   oaes_lib.o cryptonight.o
+
+ifeq ($(USE_SSE2),1)
+OBJS += jh/jh_sse2_opt64.o
+else
+OBJS += jh/jh_ansi_opt64.o
+endif
+
 EM_OBJS = $(OBJS:.o=.js.o)
 
 # emscripten docker

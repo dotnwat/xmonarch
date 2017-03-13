@@ -5,7 +5,7 @@
 #include "keccak.h"
 #include "blake.h"
 #include "skein.h"
-#include "jh.h"
+#include "jh/jh.h"
 #include "groestl.h"
 #include "oaes_lib.h"
 

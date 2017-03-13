@@ -4,7 +4,7 @@
 #include <string.h>
 #include "base64.h"
 #include "keccak.h"
-#include "jh.h"
+#include "jh/jh.h"
 #include "blake.h"
 #include "skein.h"
 #include "groestl.h"

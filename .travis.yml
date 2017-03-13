@@ -23,6 +23,11 @@ env:
   - OPT_LEVEL="-O1"
   - OPT_LEVEL="-O2"
   - OPT_LEVEL="-O3"
+  - USE_SSE2=1 OPT_LEVEL=""
+  - USE_SSE2=1 OPT_LEVEL="-O0"
+  - USE_SSE2=1 OPT_LEVEL="-O1"
+  - USE_SSE2=1 OPT_LEVEL="-O2"
+  - USE_SSE2=1 OPT_LEVEL="-O3"
 
 before_install:
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
