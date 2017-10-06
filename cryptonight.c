@@ -274,7 +274,6 @@ static inline void SubAndShiftAndMixAddRoundInPlace(uint32_t * temp, uint32_t * 
 }
 
 void cryptonight_hash_ctx(void * output, const void * input, struct cryptonight_ctx * ctx) {
-    
     ctx->aes_ctx = (oaes_ctx*) oaes_alloc();
     size_t i, j;
     //hash_process(&ctx->state.hs, (const uint8_t*) input, 76);
@@ -326,6 +325,10 @@ void cryptonight_hash_ctx(void * output, const void * input, struct cryptonight_
     }
 
     memcpy(ctx->text, ctx->state.init, INIT_SIZE_BYTE);
+
+    oaes_free((OAES_CTX **) &ctx->aes_ctx);
+    ctx->aes_ctx = (oaes_ctx*) oaes_alloc();
+
     oaes_key_import_data(ctx->aes_ctx, &ctx->state.hs.b[32], AES_KEY_SIZE);
     
     for(i = 0; likely(i < MEMORY); i += INIT_SIZE_BYTE)
