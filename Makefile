@@ -23,8 +23,8 @@ endif
 EM_OBJS = $(OBJS:.o=.js.o)
 
 # emscripten docker
-EM_DOCKER = docker run -v $(CURDIR):/src \
-	trzeci/emscripten:sdk-tag-1.37.3-64bit
+EM_DOCKER = docker run -v $(CURDIR):/src:z,rw \
+	trzeci/emscripten:sdk-tag-1.37.21-64bit
 EMCC = $(EM_DOCKER) emcc
 EM++ = $(EM_DOCKER) em++
 
