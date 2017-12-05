@@ -6,7 +6,7 @@
 #include "groestl.h"
 #include "jh/jh.h"
 #include "skein.h"
-#include "keccak.h"
+#include "keccak/keccak.h"
 #include "cryptonight.h"
 #include "oaes_lib.h"
 #include "json.hpp"

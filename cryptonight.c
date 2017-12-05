@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include "keccak.h"
+#include "keccak/keccak.h"
 #include "blake.h"
 #include "skein.h"
 #include "jh/jh.h"

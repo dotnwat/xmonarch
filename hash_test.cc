@@ -3,7 +3,7 @@
 #include <cassert>
 #include <string.h>
 #include "base64.h"
-#include "keccak.h"
+#include "keccak/keccak.h"
 #include "jh/jh.h"
 #include "blake.h"
 #include "skein.h"
