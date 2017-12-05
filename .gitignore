@@ -2,3 +2,4 @@
 *.mem
 test/hash*
 test/vectest*
+node_modules/

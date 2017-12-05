@@ -1,0 +1,25 @@
+{
+  "name": "cryptonight.js",
+  "version": "0.0.1",
+  "description": "TODO",
+  "main": "cryptonight.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahdesu/xmonarch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahdesu/xmonarch/issues"
+  },
+  "homepage": "https://github.com/noahdesu/xmonarch#readme",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}

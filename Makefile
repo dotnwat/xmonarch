@@ -1,17 +1,21 @@
 OPT_LEVEL ?=
 USE_SSE2 ?=
+EMCC_WASM_BACKEND ?=
 
 CFLAGS = -I. -Wall -Werror -fno-strict-aliasing $(OPT_LEVEL)
 CXXFLAGS = -I. -Wall -Werror --std=c++11 $(OPT_LEVEL)
 
 ifeq ($(USE_SSE2),1)
 CFLAGS += -msse2
+CXXFLAGS += -msse2
 endif
 
 PROGS = test/hash \
 	test/hash.js \
+	test/hash-wasm.js \
 	test/vectest \
-	test/vectest.js
+	test/vectest.js \
+	test/vectest-wasm.js
 
 all: $(PROGS)
 
@@ -45,13 +49,29 @@ $(EM_OBJS): %.js.o: %.c
 %.js: %.c
 	$(EMCC) $(CFLAGS) -o $@ $^
 
+%-wasm.js: %.cc
+	$(EM++) -s WASM=1 $(CXXFLAGS) -o $@ $^
+
+%-wasm.js: %.c
+	$(EMCC) -s WASM=1 $(CFLAGS) -o $@ $^
+
 test/hash: $(OBJS)
 
 test/hash.js: $(EM_OBJS)
 
+test/hash-wasm.js: $(EM_OBJS)
+
 test/vectest: $(OBJS)
 
 test/vectest.js: $(EM_OBJS)
+
+test/vectest-wasm.js: $(EM_OBJS)
+
+module.js: $(EM_OBJS)
+	$(EMCC) -s MODULARIZE=1 -s NO_DYNAMIC_EXECUTION=1 -s EXPORTED_FUNCTIONS="['_cryptonight']" -o $@ $^
+
+cryptonight.js: pre.js module.js api.js post.js
+	cat $^ > $@
 
 test: all
 	(cd test && ./test.sh)
