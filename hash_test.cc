@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cassert>
 #include <string.h>
-#include "base64.h"
+#include "util/base64.h"
 #include "keccak/keccak.h"
 #include "jh/jh.h"
 #include "blake/blake.h"

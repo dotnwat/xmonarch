@@ -9,7 +9,7 @@
 #include "keccak/keccak.h"
 #include "cryptonight/cryptonight.h"
 #include "oaes/oaes_lib.h"
-#include "json.hpp"
+#include "util/json.hpp"
 
 using json = nlohmann::json;
 

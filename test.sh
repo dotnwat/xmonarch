@@ -39,10 +39,10 @@ function build_and_run() {
       compare 200 keccakf
     done
   done
-  for vecfile in blake/blake groestl/groestl jh keccak/keccak keccak/keccakf oaes/oaes_key_import_data skein/skein cryptonight/cryptonight; do
-    echo "testing $vecfile vectors"
-    cat ${vecfile}.json | ./hash_test2
-    cat ${vecfile}.json | node hash_test2.js
+  for vecfile in blake groestl jh keccak keccakf oaes_key_import_data skein cryptonight; do
+    echo "testing vecs/$vecfile vectors"
+    cat vecs/${vecfile}.json | ./hash_test2
+    cat vecs/${vecfile}.json | node hash_test2.js
   done
 }
 
