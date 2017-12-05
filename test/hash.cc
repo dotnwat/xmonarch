@@ -2,13 +2,13 @@
 #include <iostream>
 #include <cassert>
 #include <string.h>
-#include "base64.h"
-#include "keccak.h"
+#include "util/base64.h"
+#include "keccak/keccak.h"
 #include "jh/jh.h"
-#include "blake.h"
-#include "skein.h"
-#include "groestl.h"
-#include "oaes_lib.h"
+#include "blake/blake.h"
+#include "skein/skein.h"
+#include "groestl/groestl.h"
+#include "oaes/oaes_lib.h"
 
 int main(int argc, char **argv)
 {

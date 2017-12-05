@@ -1,18 +1,26 @@
 OPT_LEVEL ?=
 USE_SSE2 ?=
 
-CFLAGS = -Wall -Werror -fno-strict-aliasing $(OPT_LEVEL)
-CXXFLAGS = -Wall -Werror --std=c++11 $(OPT_LEVEL)
+CFLAGS = -I. -Wall -Werror -fno-strict-aliasing $(OPT_LEVEL)
+CXXFLAGS = -I. -Wall -Werror --std=c++11 $(OPT_LEVEL)
 
 ifeq ($(USE_SSE2),1)
 CFLAGS += -msse2
 endif
 
-PROGS = hash_test hash_test.js hash_test2 hash_test2.js
+PROGS = test/hash \
+	test/hash.js \
+	test/vectest \
+	test/vectest.js
+
 all: $(PROGS)
 
-OBJS = keccak.o blake.o skein.o groestl.o \
-	   oaes_lib.o cryptonight.o
+OBJS = keccak/keccak.o \
+       blake/blake.o \
+       skein/skein.o \
+       groestl/groestl.o \
+       oaes/oaes_lib.o \
+       cryptonight/cryptonight.o
 
 ifeq ($(USE_SSE2),1)
 OBJS += jh/jh_sse2_opt64.o
@@ -23,8 +31,8 @@ endif
 EM_OBJS = $(OBJS:.o=.js.o)
 
 # emscripten docker
-EM_DOCKER = docker run -v $(CURDIR):/src \
-	trzeci/emscripten:sdk-tag-1.37.3-64bit
+EM_DOCKER = docker run -v $(CURDIR):/src:z,rw \
+	trzeci/emscripten:sdk-tag-1.37.21-64bit
 EMCC = $(EM_DOCKER) emcc
 EM++ = $(EM_DOCKER) em++
 
@@ -37,13 +45,16 @@ $(EM_OBJS): %.js.o: %.c
 %.js: %.c
 	$(EMCC) $(CFLAGS) -o $@ $^
 
-hash_test: $(OBJS)
+test/hash: $(OBJS)
 
-hash_test.js: $(EM_OBJS)
+test/hash.js: $(EM_OBJS)
 
-hash_test2: $(OBJS)
+test/vectest: $(OBJS)
 
-hash_test2.js: $(EM_OBJS)
+test/vectest.js: $(EM_OBJS)
+
+test: all
+	(cd test && ./test.sh)
 
 clean:
 	rm -f $(OBJS) $(EM_OBJS) $(PROGS)

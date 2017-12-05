@@ -34,4 +34,4 @@ before_install:
   - docker pull trzeci/emscripten:sdk-tag-1.37.3-64bit
 
 script:
-  - ./test.sh
+  - make test

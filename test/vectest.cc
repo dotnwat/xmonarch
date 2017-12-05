@@ -2,14 +2,14 @@
 #include <iostream>
 #include <cassert>
 #include <string.h>
-#include "blake.h"
-#include "groestl.h"
+#include "blake/blake.h"
+#include "groestl/groestl.h"
 #include "jh/jh.h"
-#include "skein.h"
-#include "keccak.h"
-#include "cryptonight.h"
-#include "oaes_lib.h"
-#include "json.hpp"
+#include "skein/skein.h"
+#include "keccak/keccak.h"
+#include "cryptonight/cryptonight.h"
+#include "oaes/oaes_lib.h"
+#include "util/json.hpp"
 
 using json = nlohmann::json;
 

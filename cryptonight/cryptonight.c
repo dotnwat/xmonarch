@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include "keccak.h"
-#include "blake.h"
-#include "skein.h"
+#include "keccak/keccak.h"
+#include "blake/blake.h"
+#include "skein/skein.h"
 #include "jh/jh.h"
-#include "groestl.h"
-#include "oaes_lib.h"
+#include "groestl/groestl.h"
+#include "oaes/oaes_lib.h"
 
 #define MEMORY         (1 << 21) /* 2 MiB */
 #define ITER           (1 << 20)
