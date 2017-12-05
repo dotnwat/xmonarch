@@ -6,7 +6,7 @@
 #include "blake.h"
 #include "skein.h"
 #include "jh/jh.h"
-#include "groestl.h"
+#include "groestl/groestl.h"
 #include "oaes_lib.h"
 
 #define MEMORY         (1 << 21) /* 2 MiB */

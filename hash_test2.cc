@@ -3,7 +3,7 @@
 #include <cassert>
 #include <string.h>
 #include "blake.h"
-#include "groestl.h"
+#include "groestl/groestl.h"
 #include "jh/jh.h"
 #include "skein.h"
 #include "keccak/keccak.h"

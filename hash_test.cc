@@ -7,7 +7,7 @@
 #include "jh/jh.h"
 #include "blake.h"
 #include "skein.h"
-#include "groestl.h"
+#include "groestl/groestl.h"
 #include "oaes_lib.h"
 
 int main(int argc, char **argv)
