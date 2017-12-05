@@ -1,8 +1,8 @@
 OPT_LEVEL ?=
 USE_SSE2 ?=
 
-CFLAGS = -Wall -Werror -fno-strict-aliasing $(OPT_LEVEL)
-CXXFLAGS = -Wall -Werror --std=c++11 $(OPT_LEVEL)
+CFLAGS = -I. -Wall -Werror -fno-strict-aliasing $(OPT_LEVEL)
+CXXFLAGS = -I. -Wall -Werror --std=c++11 $(OPT_LEVEL)
 
 ifeq ($(USE_SSE2),1)
 CFLAGS += -msse2
@@ -11,8 +11,12 @@ endif
 PROGS = hash_test hash_test.js hash_test2 hash_test2.js
 all: $(PROGS)
 
-OBJS = keccak/keccak.o blake/blake.o skein/skein.o groestl/groestl.o \
-	   oaes/oaes_lib.o cryptonight.o
+OBJS = keccak/keccak.o \
+       blake/blake.o \
+       skein/skein.o \
+       groestl/groestl.o \
+       oaes/oaes_lib.o \
+       cryptonight/cryptonight.o
 
 ifeq ($(USE_SSE2),1)
 OBJS += jh/jh_sse2_opt64.o

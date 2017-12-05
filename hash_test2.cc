@@ -7,7 +7,7 @@
 #include "jh/jh.h"
 #include "skein/skein.h"
 #include "keccak/keccak.h"
-#include "cryptonight.h"
+#include "cryptonight/cryptonight.h"
 #include "oaes/oaes_lib.h"
 #include "json.hpp"
 
