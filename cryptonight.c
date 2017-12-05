@@ -4,7 +4,7 @@
 #include <string.h>
 #include "keccak/keccak.h"
 #include "blake.h"
-#include "skein.h"
+#include "skein/skein.h"
 #include "jh/jh.h"
 #include "groestl/groestl.h"
 #include "oaes_lib.h"
