@@ -54,7 +54,7 @@ test/vectest: $(OBJS)
 test/vectest.js: $(EM_OBJS)
 
 test: all
-	test/test.sh
+	(cd test && ./test.sh)
 
 clean:
 	rm -f $(OBJS) $(EM_OBJS) $(PROGS)

@@ -14,8 +14,8 @@ function compare() {
   trap "rm -f $input $out0 $out1" EXIT
 
   cat /dev/urandom | head -c $size | base64 > $input
-  cat $input | test/hash $func > $out0
-  cat $input | node test/hash.js $func > $out1
+  cat $input | ./hash $func > $out0
+  cat $input | node ./hash.js $func > $out1
 
   diff $out0 $out1
 
@@ -38,9 +38,9 @@ function build_and_run() {
     done
   done
   for vecfile in blake groestl jh keccak keccakf oaes_key_import_data skein cryptonight; do
-    echo "testing test/vecs/$vecfile vectors"
-    cat test/vecs/${vecfile}.json | test/vectest
-    cat test/vecs/${vecfile}.json | node test/vectest.js
+    echo "testing vecs/$vecfile vectors"
+    cat vecs/${vecfile}.json | ./vectest
+    cat vecs/${vecfile}.json | node ./vectest.js
   done
 }
 
