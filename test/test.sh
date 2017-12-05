@@ -14,8 +14,8 @@ function compare() {
   trap "rm -f $input $out0 $out1" EXIT
 
   cat /dev/urandom | head -c $size | base64 > $input
-  cat $input | ./hash_test $func > $out0
-  cat $input | node hash_test.js $func > $out1
+  cat $input | test/hash $func > $out0
+  cat $input | node test/hash.js $func > $out1
 
   diff $out0 $out1
 
@@ -23,8 +23,6 @@ function compare() {
 }
 
 function build_and_run() {
-  make clean
-  make -j$(nproc)
   for run in {1..10}; do
     size1=$((1 + RANDOM % 128))
     size2=$((129 + RANDOM % 1000000))
@@ -40,9 +38,9 @@ function build_and_run() {
     done
   done
   for vecfile in blake groestl jh keccak keccakf oaes_key_import_data skein cryptonight; do
-    echo "testing vecs/$vecfile vectors"
-    cat vecs/${vecfile}.json | ./hash_test2
-    cat vecs/${vecfile}.json | node hash_test2.js
+    echo "testing test/vecs/$vecfile vectors"
+    cat test/vecs/${vecfile}.json | test/vectest
+    cat test/vecs/${vecfile}.json | node test/vectest.js
   done
 }
 

@@ -8,7 +8,11 @@ ifeq ($(USE_SSE2),1)
 CFLAGS += -msse2
 endif
 
-PROGS = hash_test hash_test.js hash_test2 hash_test2.js
+PROGS = test/hash \
+	test/hash.js \
+	test/vectest \
+	test/vectest.js
+
 all: $(PROGS)
 
 OBJS = keccak/keccak.o \
@@ -41,13 +45,16 @@ $(EM_OBJS): %.js.o: %.c
 %.js: %.c
 	$(EMCC) $(CFLAGS) -o $@ $^
 
-hash_test: $(OBJS)
+test/hash: $(OBJS)
 
-hash_test.js: $(EM_OBJS)
+test/hash.js: $(EM_OBJS)
 
-hash_test2: $(OBJS)
+test/vectest: $(OBJS)
 
-hash_test2.js: $(EM_OBJS)
+test/vectest.js: $(EM_OBJS)
+
+test: all
+	test/test.sh
 
 clean:
 	rm -f $(OBJS) $(EM_OBJS) $(PROGS)
