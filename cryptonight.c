@@ -7,7 +7,7 @@
 #include "skein/skein.h"
 #include "jh/jh.h"
 #include "groestl/groestl.h"
-#include "oaes_lib.h"
+#include "oaes/oaes_lib.h"
 
 #define MEMORY         (1 << 21) /* 2 MiB */
 #define ITER           (1 << 20)

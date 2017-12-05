@@ -8,7 +8,7 @@
 #include "skein/skein.h"
 #include "keccak/keccak.h"
 #include "cryptonight.h"
-#include "oaes_lib.h"
+#include "oaes/oaes_lib.h"
 #include "json.hpp"
 
 using json = nlohmann::json;
