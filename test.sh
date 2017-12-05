@@ -14,12 +14,10 @@ function compare() {
   trap "rm -f $input $out0 $out1" EXIT
 
   cat /dev/urandom | head -c $size | base64 > $input
-  cat $input | md5sum
   cat $input | ./hash_test $func > $out0
   cat $input | node hash_test.js $func > $out1
 
   diff $out0 $out1
-  cat $out0 | md5sum
 
   rm $input $out0 $out1
 }
