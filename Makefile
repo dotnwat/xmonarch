@@ -11,7 +11,7 @@ endif
 PROGS = hash_test hash_test.js hash_test2 hash_test2.js
 all: $(PROGS)
 
-OBJS = keccak/keccak.o blake.o skein/skein.o groestl/groestl.o \
+OBJS = keccak/keccak.o blake/blake.o skein/skein.o groestl/groestl.o \
 	   oaes_lib.o cryptonight.o
 
 ifeq ($(USE_SSE2),1)

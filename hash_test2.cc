@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cassert>
 #include <string.h>
-#include "blake.h"
+#include "blake/blake.h"
 #include "groestl/groestl.h"
 #include "jh/jh.h"
 #include "skein/skein.h"

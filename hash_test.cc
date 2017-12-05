@@ -5,7 +5,7 @@
 #include "base64.h"
 #include "keccak/keccak.h"
 #include "jh/jh.h"
-#include "blake.h"
+#include "blake/blake.h"
 #include "skein/skein.h"
 #include "groestl/groestl.h"
 #include "oaes_lib.h"

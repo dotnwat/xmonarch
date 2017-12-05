@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <string.h>
 #include "keccak/keccak.h"
-#include "blake.h"
+#include "blake/blake.h"
 #include "skein/skein.h"
 #include "jh/jh.h"
 #include "groestl/groestl.h"
