@@ -68,7 +68,7 @@ test/vectest.js: $(EM_OBJS)
 test/vectest-wasm.js: $(EM_OBJS)
 
 module.js: $(EM_OBJS)
-	$(EMCC) -s MODULARIZE=1 -s NO_DYNAMIC_EXECUTION=1 -s EXPORTED_FUNCTIONS="['_cryptonight']" -o $@ $^
+	$(EMCC) -s MODULARIZE=1 -s NO_DYNAMIC_EXECUTION=1 -s EXPORTED_FUNCTIONS="['_cryptonight']" -s EXPORTED_RUNTIME_METHODS="['malloc', 'Pointer_stringify', 'cwrap', 'UTF8ToString']" -o $@ $^
 
 cryptonight.js: pre.js module.js api.js post.js
 	cat $^ > $@

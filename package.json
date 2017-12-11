@@ -7,11 +7,18 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack",
+    "start": "npm run build && webpack-dev-server --progress --color"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noahdesu/xmonarch.git"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "crypto": false
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +27,13 @@
   },
   "homepage": "https://github.com/noahdesu/xmonarch#readme",
   "devDependencies": {
-    "jest": "^21.2.1"
+    "jest": "^21.2.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "js-base64": "^2.4.0",
+    "vue": "^2.5.9"
   }
 }
